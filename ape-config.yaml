@@ -1,0 +1,14 @@
+name: Flipper
+version: 1.0.0
+
+networks:
+  custom:
+    - name: anvil
+      chain_id: 31337
+      ecosystem: ethereum
+      default_provider: node
+
+solidity:
+  version: 0.8.20
+vyper:
+  version: 0.3.7
