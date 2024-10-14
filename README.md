@@ -1,5 +1,7 @@
 # Introduction to Blockchain with Python
 
+- A simple sample of how to works a vyper lang with ape frameworks
+
 ## Quickstart Guide
 
 ### 1. Setup environment
@@ -15,12 +17,10 @@ source .venv/bin/activate
 
 ```bash
 pip3 install eth-ape
-pip3 install ape-solidity
 pip3 install ape-vyper
 ```
 
 **Install local blockchain**
-
 
 ```bash
 # We will use `anvil` from foundry framework
@@ -42,8 +42,11 @@ anvil
 
 ### 5. Create your Test Wallet
 
+> [!CAUTION]
+> tip dont use this with mainnet assets
+
 ```bash
-# past this private key: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+# past this test private key: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
 ape accounts import my_wallet
 ```
 
@@ -54,7 +57,6 @@ ape run deploy --network ethereum:anvil:node
 ```
 
 ### 6. Interacte with Smartcontract
-
 
 ```python
 # for interacte with smartcontract you need open console
