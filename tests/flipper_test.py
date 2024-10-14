@@ -1,11 +1,11 @@
 def test_flipper_initial_state(flipper):
-    initial_state = flipper.getState()
+    initial_state = flipper.get()
     assert initial_state == True
 
 
 def test_flipper_change_state_with_flip(flipper, alice):
-    assert flipper.getState() == True
+    assert flipper.get() == True
 
     flipper.flip(sender=alice)
 
-    assert flipper.getState() == False
+    assert flipper.get() == False
