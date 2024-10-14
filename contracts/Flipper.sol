@@ -12,7 +12,7 @@ contract Flipper {
         state = !state;
     }
 
-    function getState() external view returns (bool) {
+    function get() external view returns (bool) {
         return state;
     }
 }

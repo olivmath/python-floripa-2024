@@ -1,7 +1,7 @@
 # @version ^0.3.7
 
 
-state: public(bool)
+state: bool
 
 @external
 def __init__():
@@ -13,5 +13,5 @@ def flip():
 
 @external
 @view
-def get_state() -> bool:
+def get() -> bool:
     return self.state
